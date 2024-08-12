@@ -1,0 +1,33 @@
+body {
+    background-color: #f7ecde;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    bottom: 0%;
+    width: 21%;
+    height: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: rgba(255, 201, 40, 0.933);
+    transition: all 0.5s;
+
+}
+
+h1:hover:after {
+    height: 25px;
+    opacity: 0.4;
+}
+
+h2 {
+    background: rgb(19, 26, 24);
+    background: linear-gradient(90deg, rgb(0, 193, 61) 0%, rgb(107, 128, 44) 49%, rgb(255, 242, 121) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
